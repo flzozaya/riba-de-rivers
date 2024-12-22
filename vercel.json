@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "./api/app.py",
+      "src": "api/app.py",
       "use": "@vercel/python",
       "config": {
         "runtime": "python3.12",
-        "buildCommand": "pip install -r requirements.txt",
+        "buildCommand": "pip install -r ./api/requirements.txt",
         "outputDirectory": "build"
       }
     }
